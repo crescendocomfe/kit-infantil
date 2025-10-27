@@ -21,6 +21,7 @@ import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
 import productFeatures from "@/assets/product-features.png";
 import productActivity from "@/assets/product-activity.png";
+import creatorPhoto from "@/assets/creator-photo.png";
 
 const Index = () => {
   return (
@@ -269,6 +270,34 @@ const Index = () => {
               role="Empreendedora cristã"
               testimonial="Vendi mais de 30 kits em 2 semanas. É uma renda com propósito!"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* About Me Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-foreground to-foreground/95">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 text-white order-2 md:order-1">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold leading-tight">
+                Construa um negócio digital rentável no nicho infantil
+              </h2>
+              <div className="space-y-4 text-lg opacity-95">
+                <p>
+                  <span className="font-semibold">vendendo materiais prontos</span>, sem precisar criar do zero, sem se expor e conquistando vendas diárias!
+                </p>
+                <p className="text-xl border-l-4 border-primary pl-4 py-2">
+                  Um método simples e comprovado que tem feito pessoas comuns faturarem de R$100 a R$300 por dia, mesmo começando do zero e sem qualquer experiência.
+                </p>
+              </div>
+            </div>
+            <div className="order-1 md:order-2 animate-slide-up">
+              <img 
+                src={creatorPhoto} 
+                alt="Criadora do Kit Crescendo com Fé"
+                className="rounded-3xl shadow-soft w-full"
+              />
+            </div>
           </div>
         </div>
       </section>

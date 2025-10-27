@@ -19,6 +19,8 @@ import heroImage from "@/assets/hero-image.jpg";
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
+import productFeatures from "@/assets/product-features.png";
+import productActivity from "@/assets/product-activity.png";
 
 const Index = () => {
   return (
@@ -55,6 +57,37 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Emotional Pain Point Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-secondary/5 to-background">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground leading-tight">
+                Você sente que está correndo sem sair do lugar?
+              </h2>
+              <div className="space-y-4 text-lg text-muted-foreground">
+                <p>
+                  Dias que passam rápido, contas que não param de chegar, e aquela sensação de que falta algo maior…
+                </p>
+                <p>
+                  E se você pudesse unir o propósito de ensinar a fé com uma renda extra que realmente faz diferença?
+                </p>
+                <p className="text-xl text-primary font-semibold font-heading">
+                  O Kit Crescendo com Fé te dá as duas coisas: impacto espiritual e resultado financeiro.
+                </p>
+              </div>
+            </div>
+            <div className="animate-slide-up">
+              <img 
+                src={productActivity} 
+                alt="Atividade bíblica do kit"
+                className="rounded-3xl shadow-soft w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Emotional Connection Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center space-y-6">
@@ -81,6 +114,14 @@ const Index = () => {
             <p className="text-lg text-muted-foreground">
               Um kit completo para transformar o ensino bíblico
             </p>
+          </div>
+
+          <div className="mb-12">
+            <img 
+              src={productFeatures} 
+              alt="Kit Crescendo com Fé - Materiais inclusos"
+              className="rounded-3xl shadow-soft w-full max-w-4xl mx-auto"
+            />
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -118,6 +159,53 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Income Opportunity Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-success/10 via-primary/5 to-accent/10">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 space-y-6">
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
+              💰 Transforme Propósito em Renda Extra
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Além de ensinar a fé, você pode criar uma fonte de renda abençoada revendendo o kit
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-3xl shadow-soft p-8 md:p-12 text-center space-y-8">
+            <div className="space-y-4">
+              <p className="text-2xl md:text-3xl font-heading font-semibold text-muted-foreground">
+                Ganhe de
+              </p>
+              <p className="text-5xl md:text-7xl font-heading font-bold text-primary">
+                R$ 2.000 a R$ 10.000
+              </p>
+              <p className="text-2xl md:text-3xl font-heading font-semibold text-muted-foreground">
+                por mês com propósito
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6 pt-6">
+              <div className="space-y-2">
+                <div className="text-4xl font-bold text-primary">100%</div>
+                <p className="text-muted-foreground">dos lucros são seus</p>
+              </div>
+              <div className="space-y-2">
+                <div className="text-4xl font-bold text-primary">PLR</div>
+                <p className="text-muted-foreground">Licença completa inclusa</p>
+              </div>
+              <div className="space-y-2">
+                <div className="text-4xl font-bold text-primary">∞</div>
+                <p className="text-muted-foreground">Vendas ilimitadas</p>
+              </div>
+            </div>
+
+            <p className="text-lg text-foreground leading-relaxed max-w-2xl mx-auto">
+              Imagine ter uma renda extra trabalhando de casa, no seu tempo, fazendo algo que você ama: espalhar a Palavra de Deus! 🙏✨
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Bonus Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-5xl">
@@ -147,25 +235,6 @@ const Index = () => {
               description="Você tem permissão total para revender e lucrar 100%!"
             />
           </div>
-        </div>
-      </section>
-
-      {/* Transformation Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-accent/10 via-secondary/10 to-primary/5">
-        <div className="container mx-auto max-w-4xl text-center space-y-8">
-          <Sparkles className="w-16 h-16 mx-auto text-primary animate-float" />
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground">
-            💡 Deixe Deus agir através de você!
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Com o Kit Crescendo com Fé, você não apenas ensina a Palavra — você transforma corações.
-          </p>
-          <p className="text-xl text-foreground font-semibold">
-            Imagine ver crianças orando, aprendendo versículos e crescendo com valores cristãos sólidos…
-          </p>
-          <p className="text-xl text-primary font-semibold font-heading">
-            E ainda poder transformar isso em uma fonte de renda abençoada.
-          </p>
         </div>
       </section>
 

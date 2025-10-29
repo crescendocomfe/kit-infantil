@@ -25,23 +25,17 @@ import creatorPhoto from "@/assets/creator-photo.png";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/10">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-hero py-12 md:py-20 px-4">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full animate-float"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 bg-white rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-white rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-        </div>
-        
+      <section className="relative overflow-hidden bg-gradient-hero py-8 md:py-16 px-4">
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="text-white space-y-4 md:space-y-6 animate-fade-in">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-                Ensine a fé brincando e transforme vidas — inclusive a sua!
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+            <div className="text-white space-y-4 md:space-y-5 animate-fade-in">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight uppercase">
+                Seja dono(a) do seu próprio produto cristão e fique com 100% do lucro ainda hoje!
               </h1>
-              <p className="text-base md:text-lg lg:text-xl opacity-95">
-                O Kit Crescendo com Fé é o material cristão completo para ensinar a Palavra de Deus às crianças de forma divertida, com histórias, atividades e desenhos. E o melhor: você pode revender e lucrar com propósito!
+              <p className="text-lg md:text-2xl lg:text-3xl font-bold leading-tight">
+                Comece sua renda, de R$2.000 a R$5.000 ainda hoje.
               </p>
               <CTAButton>
                 🟣 Quero acessar agora por apenas R$39,90!
@@ -50,82 +44,151 @@ const Index = () => {
             <div className="animate-slide-up">
               <img 
                 src={heroImage} 
-                alt="Mãe ensinando crianças com a Bíblia"
-                className="rounded-2xl md:rounded-3xl shadow-soft w-full"
+                alt="Kit Crescendo com Fé - Material Cristão"
+                className="rounded-xl md:rounded-2xl shadow-soft w-full"
               />
             </div>
           </div>
         </div>
       </section>
 
+      {/* Scrolling Ticker */}
+      <div className="bg-primary py-2 overflow-hidden">
+        <div className="flex animate-scroll whitespace-nowrap">
+          {[...Array(20)].map((_, i) => (
+            <div key={i} className="flex items-center mx-4 md:mx-8 text-white font-semibold text-sm md:text-base">
+              <CheckCircle className="w-4 h-4 mr-2 flex-shrink-0" />
+              <span>ACESSO IMEDIATO</span>
+              <CheckCircle className="w-4 h-4 mx-4 md:mx-8 flex-shrink-0" />
+              <span>COMPRA SEGURA</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Emotional Pain Point Section */}
-      <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-secondary/5 to-background">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-4 md:space-y-6">
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground leading-tight">
-                Você sente que está correndo sem sair do lugar?
-              </h2>
-              <div className="space-y-3 md:space-y-4 text-base md:text-lg text-muted-foreground">
-                <p>
-                  Dias que passam rápido, contas que não param de chegar, e aquela sensação de que falta algo maior…
+      <section className="py-10 md:py-16 px-4 bg-primary text-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-heading font-bold mb-6 md:mb-10 text-center">
+            Apresentamos o PLR HISTÓRIAS DE LUZ
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+            <div className="space-y-3 md:space-y-4">
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 mt-1 text-success" />
+                <p className="text-sm md:text-base">
+                  Está cansada de lutar para equilibrar as contas — e ver o dinheiro acabar antes do mês?
                 </p>
-                <p>
-                  E se você pudesse unir o propósito de ensinar a fé com uma renda extra que realmente faz diferença?
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 mt-1 text-success" />
+                <p className="text-sm md:text-base">
+                  Sonha em ter um produto digital seu, mas se sente perdida sem saber por onde começar?
                 </p>
-                <p className="text-lg md:text-xl text-primary font-semibold font-heading">
-                  O Kit Crescendo com Fé te dá as duas coisas: impacto espiritual e resultado financeiro.
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 mt-1 text-success" />
+                <p className="text-sm md:text-base">
+                  Queria empreender, mas sem abrir mão dos seus valores cristãos e da sua rotina com a família?
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 mt-1 text-success" />
+                <p className="text-sm md:text-base">
+                  Já tentou vender algo que não representava sua fé — e ainda teve pouco ou nenhum resultado?
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 mt-1 text-success" />
+                <p className="text-sm md:text-base">
+                  Deseja uma fonte de renda que combine com seu propósito, sua fé e sua realidade?
+                </p>
+              </div>
+              <div className="mt-6 p-4 bg-white/10 rounded-lg border-l-4 border-accent">
+                <p className="text-sm md:text-base font-semibold italic">
+                  💡 Se você respondeu "sim" para qualquer uma dessas perguntas, o Histórias de Luz foi feito especialmente para você.
                 </p>
               </div>
             </div>
             <div className="animate-slide-up">
               <img 
                 src={productActivity} 
-                alt="Família preocupada com finanças"
-                className="rounded-2xl md:rounded-3xl shadow-soft w-full"
+                alt="Material do Kit Crescendo com Fé"
+                className="rounded-xl md:rounded-2xl shadow-soft w-full"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Emotional Connection Section */}
-      <section className="py-12 md:py-20 px-4">
-        <div className="container mx-auto max-w-4xl text-center space-y-4 md:space-y-6">
-          <Sprout className="w-12 h-12 md:w-16 md:h-16 mx-auto text-success animate-float" />
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground px-4">
-            Porque ensinar a fé é a herança mais linda que podemos deixar
-          </h2>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto px-4">
-            Vivemos tempos em que as telas distraem e o amor de Deus é esquecido no dia a dia. O Kit Crescendo com Fé nasceu para ajudar famílias e educadores a trazerem de volta o verdadeiro propósito: ensinar a Palavra de forma leve, criativa e profunda.
-          </p>
-          <p className="text-lg md:text-xl text-primary font-semibold font-heading px-4">
-            É mais que um material — é uma semente plantada no coração das próximas gerações. 🌱
-          </p>
+      {/* Benefits Section */}
+      <section className="py-10 md:py-16 px-4 bg-gradient-to-b from-secondary/20 to-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-card border-l-4 border-success">
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-6 h-6 md:w-8 md:h-8 flex-shrink-0 text-success" />
+                <div>
+                  <h3 className="font-heading font-bold text-base md:text-lg mb-2 text-foreground">
+                    Kit completo de atividades bíblicas
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground">
+                    Em PDF com mais de 600 páginas, criadas por educadores cristãos experientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-card border-l-4 border-success">
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-6 h-6 md:w-8 md:h-8 flex-shrink-0 text-success" />
+                <div>
+                  <h3 className="font-heading font-bold text-base md:text-lg mb-2 text-foreground">
+                    Licença PLR exclusiva
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground">
+                    Personalize tudo no Canva gratuito e revenda com 100% do lucro.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-card border-l-4 border-success">
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-6 h-6 md:w-8 md:h-8 flex-shrink-0 text-success" />
+                <div>
+                  <h3 className="font-heading font-bold text-base md:text-lg mb-2 text-foreground">
+                    Layouts profissionais
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground">
+                    Designs encantadores que tornam o aprendizado mais divertido e atraente.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* What You'll Receive Section */}
-      <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-secondary/5 to-background">
+      <section className="py-10 md:py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-8 md:mb-16 space-y-3 md:space-y-4">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground px-4">
+          <div className="text-center mb-6 md:mb-10 space-y-2 md:space-y-3">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-heading font-bold text-foreground px-4">
               📦 O que você vai receber
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground px-4">
+            <p className="text-sm md:text-base text-muted-foreground px-4">
               Um kit completo para transformar o ensino bíblico
             </p>
           </div>
 
-          <div className="mb-8 md:mb-12">
+          <div className="mb-6 md:mb-10">
             <img 
               src={productFeatures} 
               alt="Kit Crescendo com Fé - Materiais inclusos"
-              className="rounded-2xl md:rounded-3xl shadow-soft w-full max-w-4xl mx-auto"
+              className="rounded-xl md:rounded-2xl shadow-soft w-full max-w-4xl mx-auto"
             />
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <ContentCard 
               icon={BookOpen}
               title="Histórias Bíblicas Ilustradas"
@@ -160,49 +223,55 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Income Opportunity Section */}
-      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-success/10 via-primary/5 to-accent/10">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-8 md:mb-12 space-y-4 md:space-y-6">
+      {/* Income Opportunity Section - Destacado */}
+      <section className="py-10 md:py-16 px-4 bg-gradient-to-br from-accent/20 via-accent/10 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmMxMDciIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzIuMjEgMCA0LTEuNzkgNC00cy0xLjc5LTQtNC00LTQgMS43OS00IDQgMS43OSA0IDQgNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-6 md:mb-10 space-y-3 md:space-y-5">
+            <div className="inline-block bg-accent text-accent-foreground px-4 py-2 rounded-full font-bold text-sm md:text-base mb-2">
+              ⚡ OPORTUNIDADE DE RENDA
+            </div>
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground px-4">
               💰 Transforme Propósito em Renda Extra
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+            <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
               Além de ensinar a fé, você pode criar uma fonte de renda abençoada revendendo o kit
             </p>
           </div>
           
-          <div className="bg-white rounded-2xl md:rounded-3xl shadow-soft p-6 md:p-12 text-center space-y-6 md:space-y-8">
-            <div className="space-y-3 md:space-y-4">
-              <p className="text-xl md:text-2xl lg:text-3xl font-heading font-semibold text-muted-foreground">
+          <div className="bg-gradient-to-br from-primary to-primary/90 rounded-xl md:rounded-2xl shadow-soft p-6 md:p-12 text-center space-y-6 md:space-y-8 border-4 border-accent">
+            <div className="space-y-2 md:space-y-3">
+              <p className="text-lg md:text-2xl font-heading font-semibold text-white/90">
                 Ganhe de
               </p>
-              <p className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary leading-tight">
-                R$ 2.000 a R$ 10.000
+              <p className="text-5xl md:text-7xl lg:text-8xl font-heading font-extrabold text-white leading-none drop-shadow-lg">
+                R$ 2.000<br className="md:hidden" /> a R$ 10.000
               </p>
-              <p className="text-xl md:text-2xl lg:text-3xl font-heading font-semibold text-muted-foreground">
+              <p className="text-lg md:text-2xl font-heading font-semibold text-white/90">
                 por mês com propósito
               </p>
             </div>
             
             <div className="grid grid-cols-3 gap-3 md:gap-6 pt-4 md:pt-6">
-              <div className="space-y-1 md:space-y-2">
-                <div className="text-2xl md:text-4xl font-bold text-primary">100%</div>
-                <p className="text-xs md:text-base text-muted-foreground">dos lucros são seus</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 md:p-4">
+                <div className="text-3xl md:text-5xl font-bold text-accent">100%</div>
+                <p className="text-xs md:text-sm text-white/90 mt-1">dos lucros são seus</p>
               </div>
-              <div className="space-y-1 md:space-y-2">
-                <div className="text-2xl md:text-4xl font-bold text-primary">PLR</div>
-                <p className="text-xs md:text-base text-muted-foreground">Licença completa inclusa</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 md:p-4">
+                <div className="text-3xl md:text-5xl font-bold text-accent">PLR</div>
+                <p className="text-xs md:text-sm text-white/90 mt-1">Licença completa inclusa</p>
               </div>
-              <div className="space-y-1 md:space-y-2">
-                <div className="text-2xl md:text-4xl font-bold text-primary">∞</div>
-                <p className="text-xs md:text-base text-muted-foreground">Vendas ilimitadas</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 md:p-4">
+                <div className="text-3xl md:text-5xl font-bold text-accent">∞</div>
+                <p className="text-xs md:text-sm text-white/90 mt-1">Vendas ilimitadas</p>
               </div>
             </div>
 
-            <p className="text-sm md:text-lg text-foreground leading-relaxed max-w-2xl mx-auto px-4">
-              Imagine ter uma renda extra trabalhando de casa, no seu tempo, fazendo algo que você ama: espalhar a Palavra de Deus! 🙏✨
-            </p>
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 md:p-6 mt-4">
+              <p className="text-sm md:text-lg text-white leading-relaxed max-w-2xl mx-auto">
+                💡 Imagine ter uma renda extra trabalhando de casa, no seu tempo, fazendo algo que você ama: espalhar a Palavra de Deus! 🙏✨
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -303,21 +372,21 @@ const Index = () => {
       </section>
 
       {/* Offer Section */}
-      <section className="py-12 md:py-20 px-4 bg-gradient-hero">
+      <section className="py-10 md:py-16 px-4 bg-gradient-hero">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-white rounded-2xl md:rounded-3xl shadow-soft p-6 md:p-12 text-center space-y-6 md:space-y-8">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground">
+          <div className="bg-white rounded-xl md:rounded-2xl shadow-soft p-6 md:p-10 text-center space-y-5 md:space-y-7">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-heading font-bold text-foreground">
               🔥 Super Promoção por Tempo Limitado!
             </h2>
-            <div className="space-y-3 md:space-y-4">
-              <p className="text-xl md:text-2xl text-muted-foreground line-through">
+            <div className="space-y-2 md:space-y-3">
+              <p className="text-lg md:text-xl text-muted-foreground line-through">
                 De R$97,00
               </p>
-              <p className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary">
+              <p className="text-4xl md:text-6xl font-heading font-bold text-primary">
                 R$39,90
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 py-4 md:py-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 py-4">
               <div className="flex items-center justify-center space-x-2 text-success">
                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
                 <span className="font-semibold text-sm md:text-base">Acesso vitalício</span>

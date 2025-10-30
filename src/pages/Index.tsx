@@ -22,6 +22,13 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 import productFeatures from "@/assets/product-features.png";
 import productActivity from "@/assets/product-activity.png";
 import creatorPhoto from "@/assets/creator-photo.png";
+import activity1 from "@/assets/activity-1.png";
+import activity2 from "@/assets/activity-2.png";
+import activity3 from "@/assets/activity-3.png";
+import activity4 from "@/assets/activity-4.png";
+import activity5 from "@/assets/activity-5.png";
+import quizBiblico from "@/assets/quiz-biblico.png";
+import aprendendoOrar from "@/assets/aprendendo-orar.png";
 
 const Index = () => {
   return (
@@ -32,13 +39,16 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
             <div className="text-white space-y-4 md:space-y-5 animate-fade-in">
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight uppercase">
-                Seja dono(a) do seu próprio produto cristão e fique com 100% do lucro ainda hoje!
+                OFERTA EXCLUSIVA
               </h1>
-              <p className="text-lg md:text-2xl lg:text-3xl font-bold leading-tight">
-                Comece sua renda, de R$2.000 a R$5.000 ainda hoje.
+              <p className="text-base md:text-xl lg:text-2xl leading-tight">
+                Incentive as crianças a se <span className="font-bold underline">conectarem com Deus</span>, substituindo o tempo diante das telas por atividades que promovam o <span className="font-bold underline">crescimento espiritual e os ensinamentos cristãos.</span>
+              </p>
+              <p className="text-base md:text-lg font-semibold">
+                Adquira o KIT de Atividades Bíblicas que já transformou a vida de milhares de pessoas em todo o Brasil! DÊ O PRIMEIRO PASSO PARA IMPACTAR A VIDA DAS CRIANÇAS!
               </p>
               <CTAButton>
-                🟣 Quero acessar agora por apenas R$39,90!
+                🟣 QUERO GARANTIR MEU ACESSO AGORA!
               </CTAButton>
             </div>
             <div className="animate-slide-up">
@@ -70,7 +80,7 @@ const Index = () => {
       <section className="py-10 md:py-16 px-4 bg-primary text-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-xl md:text-3xl lg:text-4xl font-heading font-bold mb-6 md:mb-10 text-center">
-            Apresentamos o PLR HISTÓRIAS DE LUZ
+            Apresentamos o CRESCENDO COM FÉ
           </h2>
           <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
             <div className="space-y-3 md:space-y-4">
@@ -176,7 +186,7 @@ const Index = () => {
               📦 O que você vai receber
             </h2>
             <p className="text-sm md:text-base text-muted-foreground px-4">
-              Um kit completo para transformar o ensino bíblico
+              400 atividades Bíblicas para transformar o ensino cristão
             </p>
           </div>
 
@@ -186,6 +196,41 @@ const Index = () => {
               alt="Kit Crescendo com Fé - Materiais inclusos"
               className="rounded-xl md:rounded-2xl shadow-soft w-full max-w-4xl mx-auto"
             />
+          </div>
+
+          {/* Activity Showcase Grid */}
+          <div className="mb-8 md:mb-12">
+            <h3 className="text-lg md:text-2xl font-heading font-bold text-center mb-6 text-foreground">
+              Exemplos de Atividades Incluídas
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+              <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                <img src={activity1} alt="Atividade Bíblica 1" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                <img src={activity2} alt="Atividade Bíblica 2" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                <img src={activity3} alt="Atividade Bíblica 3" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                <img src={activity4} alt="Atividade Bíblica 4" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                <img src={activity5} alt="Atividade Bíblica 5" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                <img src={quizBiblico} alt="Quiz Bíblico" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                <img src={aprendendoOrar} alt="Aprendendo a Orar" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-card border border-border bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center p-4">
+                <p className="text-center font-bold text-foreground text-sm md:text-base">
+                  +390<br />Atividades
+                </p>
+              </div>
+            </div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -291,17 +336,37 @@ const Index = () => {
           <div className="space-y-6">
             <BonusCard 
               number={1}
-              title="Manual do Educador Cristão"
-              description="Dicas para ensinar a Bíblia de forma criativa e inspiradora."
+              title="Colorindo com Propósito"
+              description="Páginas para colorir com versículos e personagens bíblicos."
             />
             <BonusCard 
               number={2}
-              title="Estratégias de Revenda Cristã"
-              description="Aprenda a vender o kit no piloto automático e gerar renda com propósito."
+              title="Aprendendo com Alegria"
+              description="Atividades interativas que fixam os ensinamentos cristãos."
             />
             <BonusCard 
               number={3}
-              title="Licença de Revenda (PLR Completa)"
+              title="Aprendendo a orar"
+              description="Devocionais infantis com pequenas lições diárias, reflexões e orações."
+            />
+            <BonusCard 
+              number={4}
+              title="Quiz Bíblico interativo"
+              description="Perguntas divertidas para revisar o aprendizado de forma lúdica."
+            />
+            <BonusCard 
+              number={5}
+              title="Vídeos com histórias Bíblicas"
+              description="Conteúdo audiovisual para complementar o aprendizado."
+            />
+            <BonusCard 
+              number={6}
+              title="Estratégias orgânicas"
+              description="Aprenda a divulgar e vender o kit usando métodos gratuitos e eficazes."
+            />
+            <BonusCard 
+              number={7}
+              title="Licença de Revenda (PLR)"
               description="Você tem permissão total para revender e lucrar 100%!"
             />
           </div>
@@ -393,7 +458,7 @@ const Index = () => {
               </div>
               <div className="flex items-center justify-center space-x-2 text-success">
                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
-                <span className="font-semibold text-sm md:text-base">Entrega imediata</span>
+                <span className="font-semibold text-sm md:text-base">7 dias de garantia</span>
               </div>
               <div className="flex items-center justify-center space-x-2 text-success">
                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
@@ -401,7 +466,7 @@ const Index = () => {
               </div>
             </div>
             <CTAButton>
-              🟣 Quero garantir meu acesso agora!
+              🟣 QUERO GARANTIR MEU ACESSO AGORA!
             </CTAButton>
           </div>
         </div>
@@ -418,9 +483,9 @@ const Index = () => {
             <br className="hidden md:block" />
             O futuro da próxima geração começa no seu lar."
           </h2>
-          <CTAButton>
-            💜 Baixar o Kit Crescendo com Fé agora
-          </CTAButton>
+            <CTAButton>
+              💜 BAIXAR O KIT CRESCENDO COM FÉ AGORA
+            </CTAButton>
         </div>
       </section>
 

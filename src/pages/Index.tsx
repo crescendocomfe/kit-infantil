@@ -17,7 +17,7 @@ import {
   CheckCircle,
   Sprout
 } from "lucide-react";
-import heroImage from "@/assets/product-features.png";
+import heroImage from "@/assets/hero-image.jpg";
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";

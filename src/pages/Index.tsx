@@ -42,10 +42,17 @@ const Index = () => {
                 OFERTA EXCLUSIVA
               </h1>
               <p className="text-base md:text-xl lg:text-2xl leading-tight">
-                Incentive as crianças a se <span className="font-bold underline">conectarem com Deus</span>, substituindo o tempo diante das telas por atividades que promovam o <span className="font-bold underline">crescimento espiritual e os ensinamentos cristãos.</span>
+                🚀 SEJA DONO(A) DO SEU PRÓPRIO PRODUTO CRISTÃO E LUCRE 100%!Transforme sua fé em renda <span className="font-bold underline">comece hoje mesmo a faturar de R$2.000 a R$5.000 por mês!</span>, <span className="font-bold underline"></span>
               </p>
               <p className="text-base md:text-lg font-semibold">
-                Adquira o KIT de Atividades Bíblicas que já transformou a vida de milhares de pessoas em todo o Brasil! DÊ O PRIMEIRO PASSO PARA IMPACTAR A VIDA DAS CRIANÇAS!
+                ✨ Tudo 100% pronto para você:
+✅ Página de vendas completa
+✅ Criativos e copys profissionais
+✅ Artes exclusivas para área de membros
+✅ Licença PLR TOTAL — revenda com liberdade total
+✅ Plano de Ação com estratégias de venda testadas e aprovadas
+
+💡 Comece hoje, multiplique seu propósito e viva do que você acredita!
               </p>
               <CTAButton>
                 🟣 QUERO GARANTIR MEU ACESSO AGORA!

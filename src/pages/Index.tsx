@@ -197,13 +197,6 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="mb-6 md:mb-10">
-            <img 
-              src={productFeatures} 
-              alt="Kit Crescendo com Fé - Materiais inclusos"
-              className="rounded-xl md:rounded-2xl shadow-soft w-full max-w-4xl mx-auto"
-            />
-          </div>
 
           {/* Activity Showcase Grid */}
           <div className="mb-8 md:mb-12">

@@ -52,7 +52,7 @@ const Index = () => {
 <p className="text-base md:text-lg font-semibold">✅ Licença PLR TOTAL — revenda com liberdade total</p>
 <p className="text-base md:text-lg font-semibold">✅ Plano de Ação com estratégias de venda testadas e aprovadas</p>
 
-💡 Comece hoje, multiplique seu propósito e viva do que você acredita!
+<p className="text-base md:text-lg font-semibold">💡 Comece hoje, multiplique seu propósito e viva do que você acredita!</p>
               </p>
               <CTAButton>
                 🟣 QUERO GARANTIR MEU ACESSO AGORA!

@@ -25,13 +25,16 @@ import testimonialAmanda from "@/assets/testimonial-amanda.png";
 import productFeatures from "@/assets/product-features.png";
 import productActivity from "@/assets/product-activity.png";
 import creatorPhoto from "@/assets/creator-photo.png";
-import activity1 from "@/assets/activity-1.png";
-import activity2 from "@/assets/activity-2.png";
-import activity3 from "@/assets/activity-3.png";
-import activity4 from "@/assets/activity-4.png";
-import activity5 from "@/assets/activity-5.png";
-import quizBiblico from "@/assets/quiz-biblico.png";
-import aprendendoOrar from "@/assets/aprendendo-orar.png";
+import activityQuizBiblico from "@/assets/activity-quiz-biblico.png";
+import activityCuriosidades from "@/assets/activity-curiosidades.png";
+import activityAtitudeCorreta from "@/assets/activity-atitude-correta.png";
+import activityRomanos from "@/assets/activity-romanos.png";
+import activityMotivosAmarDeus from "@/assets/activity-motivos-amar-deus.png";
+import activityPersonagemBiblico from "@/assets/activity-personagem-biblico.png";
+import activityLabirinto from "@/assets/activity-labirinto.png";
+import activityBrinquedos from "@/assets/activity-brinquedos.png";
+import activityJogoMemoria from "@/assets/activity-jogo-memoria.png";
+import activityPaiNosso from "@/assets/activity-pai-nosso.png";
 
 const Index = () => {
   return (
@@ -223,49 +226,70 @@ const Index = () => {
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="rounded-lg overflow-hidden shadow-card border border-border">
-                      <img src={activity1} alt="Atividade Bíblica 1" className="w-full h-full object-cover" />
+                      <img src={activityQuizBiblico} alt="Quiz Bíblico - Qual era o trabalho de Jesus?" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="rounded-lg overflow-hidden shadow-card border border-border">
-                      <img src={activity2} alt="Atividade Bíblica 2" className="w-full h-full object-cover" />
+                      <img src={activityCuriosidades} alt="Curiosidades da Bíblia - Menor livro" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="rounded-lg overflow-hidden shadow-card border border-border">
-                      <img src={activity3} alt="Atividade Bíblica 3" className="w-full h-full object-cover" />
+                      <img src={activityAtitudeCorreta} alt="Marque a atitude correta com amiguinhos" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="rounded-lg overflow-hidden shadow-card border border-border">
-                      <img src={activity4} alt="Atividade Bíblica 4" className="w-full h-full object-cover" />
+                      <img src={activityRomanos} alt="Romanos 12:9-21 - Eu te amo em Jesus" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="rounded-lg overflow-hidden shadow-card border border-border">
-                      <img src={activity5} alt="Atividade Bíblica 5" className="w-full h-full object-cover" />
+                      <img src={activityMotivosAmarDeus} alt="10 Motivos Para Amar a Deus" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="rounded-lg overflow-hidden shadow-card border border-border">
-                      <img src={quizBiblico} alt="Quiz Bíblico" className="w-full h-full object-cover" />
+                      <img src={activityPersonagemBiblico} alt="Descubra o Personagem Bíblico - Jonas" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
                     <div className="rounded-lg overflow-hidden shadow-card border border-border">
-                      <img src={aprendendoOrar} alt="Aprendendo a Orar" className="w-full h-full object-cover" />
+                      <img src={activityLabirinto} alt="Labirinto Bíblico - Ajude as crianças" className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                      <img src={activityBrinquedos} alt="Ajude as crianças a chegar aos brinquedos" className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                      <img src={activityJogoMemoria} alt="Jogo da Memória Bíblico" className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <div className="rounded-lg overflow-hidden shadow-card border border-border">
+                      <img src={activityPaiNosso} alt="Pai Nosso - Oração" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </CarouselItem>

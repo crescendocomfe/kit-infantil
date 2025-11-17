@@ -434,19 +434,21 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-            <TestimonialCard 
-              image={testimonialEduardo}
-              name="Eduardo"
-              role="Aluno Crescendo com Fé"
-              testimonial="Quero te agradecer de verdade. Em apenas 10 dias consegui 228 vendas e quase R$ 5.000 em faturamento. Nunca imaginei que seria possível tão rápido. Sou muito grato por todo o aprendizado, isso mudou completamente a minha visão!"
-            />
-            <TestimonialCard 
-              image={testimonialAmanda}
-              name="Amanda"
-              role="Aluna Crescendo com Fé"
-              testimonial="Em apenas 30 dias consegui bater 10k, já com o kit Crescendo com Fé! Eu não entendia nada de Canva nem de vendas, mas segui o passo a passo e o resultado veio. Obrigada por compartilhar esse projeto abençoado, foi um divisor de águas na minha vida e na minha família!"
-            />
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+            <div className="flex justify-center">
+              <img 
+                src={testimonialEduardo} 
+                alt="Depoimento Eduardo - 228 vendas e R$ 5.000 em 10 dias"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src={testimonialAmanda} 
+                alt="Depoimento Amanda - R$ 10.167 em 30 dias"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>

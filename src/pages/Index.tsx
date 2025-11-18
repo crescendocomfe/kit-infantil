@@ -668,7 +668,6 @@ const Index = () => {
                     <Instagram className="w-4 h-4" />
                     @crescendocomfe2
                   </a>
-                </p>
               </div>
             </div>
             <div>

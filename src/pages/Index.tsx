@@ -660,15 +660,16 @@ const Index = () => {
                   <Mail className="w-4 h-4" />
                   <span>crescendocomfe2@gmail.com</span>
                 </p>
-                <p className="flex items-center justify-center md:justify-start space-x-2">
-                  <Instagram className="w-4 h-4" />
-                  <a href="https://www.instagram.com/crescendocomfe2" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="hover:text-primary transition-colors"
-                    >
-                      @crescendocomfe2
-                    </a>
+                <Instagram className="w-4 h-4" />
+                <a 
+                    href="https://www.instagram.com/crescendocomfe2" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors flex items-center gap-2"
+                  >
+                    <svg <Instagram className="w-4 h-4" /> />
+                    @crescendocomfe2
+                  </a>
 
                 </p>
               </div>

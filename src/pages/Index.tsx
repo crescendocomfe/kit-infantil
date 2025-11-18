@@ -684,7 +684,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-border text-center text-muted-foreground text-sm">
-            <p>© 2024 Kit Crescendo com Fé. Todos os direitos reservados.</p>
+            <p>© 2025 Kit Crescendo com Fé. Todos os direitos reservados.</p>
             <p className="mt-2">Desenvolvido com 💜 para formar a próxima geração na fé.</p>
           </div>
         </div>

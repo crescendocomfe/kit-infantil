@@ -652,23 +652,28 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-4">
-                Suporte
-              </h3>
-              <div className="space-y-2 text-muted-foreground text-sm">
-                <p className="flex items-center justify-center md:justify-start space-x-2">
-                  <Mail className="w-4 h-4" />
-                  <span>crescendocomfe2@gmail.com</span>
-                </p>
-               <a href="https://www.instagram.com/crescendocomfe2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary transition-colors flex items-center gap-2"
-                  >
-                    <Instagram className="w-4 h-4" />
-                    @crescendocomfe2
-                  </a>
-              </div>
+              <h3 className="font-semibold text-lg">
+              Suporte
+            </h3>
+            
+            <div className="space-y-2 text-muted-foreground text-sm">
+            
+              <p className="flex items-center justify-center md:justify-start space-x-2">
+                <Mail className="w-4 h-4" />
+                <span>crescendocomfe2@gmail.com</span>
+              </p>
+            <p>
+              <a
+                href="https://www.instagram.com/crescendocomfe2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <Instagram className="w-4 h-4" />
+                @crescendocomfe2
+              </a>
+            </p>
+            </div>
             </div>
             <div>
               <h3 className="font-heading font-semibold text-foreground mb-4">

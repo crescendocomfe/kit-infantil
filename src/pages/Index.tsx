@@ -45,22 +45,23 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
             <div className="text-white space-y-4 md:space-y-5 animate-fade-in">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight uppercase">
+              <h1 className="text-xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight uppercase">
                 OFERTA EXCLUSIVA
               </h1>
-              <p className="text-base md:text-xl lg:text-2xl leading-tight">
-                🚀 SEJA DONO(A) DO SEU PRÓPRIO PRODUTO CRISTÃO E LUCRE 100%!Transforme sua fé em renda <span className="font-bold underline">comece hoje mesmo a faturar de R$2.000 a R$5.000 por mês!</span>, <span className="font-bold underline"></span>
+              <p className="text-sm md:text-xl lg:text-2xl leading-snug md:leading-tight">
+                🚀 SEJA DONO(A) DO SEU PRÓPRIO PRODUTO CRISTÃO E LUCRE 100%! Transforme sua fé em renda <span className="font-bold underline">comece hoje mesmo a faturar de R$2.000 a R$5.000 por mês!</span>
               </p> 
-              <p className="text-base md:text-lg font-semibold">
-                ✨ Tudo 100% pronto para você:
-<p className="text-base md:text-lg font-semibold">✅ Página de vendas completa</p>
-<p className="text-base md:text-lg font-semibold">✅ Criativos e copys profissionais</p>
-<p className="text-base md:text-lg font-semibold">✅ Artes exclusivas para área de membros</p>
-<p className="text-base md:text-lg font-semibold">✅ Licença PLR TOTAL — revenda com liberdade total</p>
-<p className="text-base md:text-lg font-semibold">✅ Plano de Ação com estratégias de venda testadas e aprovadas</p>
-
-<p className="text-base md:text-lg font-semibold">💡 Comece hoje, multiplique seu propósito e viva do que você acredita!</p>
-              </p>
+              <div className="space-y-2 md:space-y-3">
+                <p className="text-sm md:text-lg font-semibold">
+                  ✨ Tudo 100% pronto para você:
+                </p>
+                <p className="text-xs md:text-base font-medium">✅ Página de vendas completa</p>
+                <p className="text-xs md:text-base font-medium">✅ Criativos e copys profissionais</p>
+                <p className="text-xs md:text-base font-medium">✅ Artes exclusivas para área de membros</p>
+                <p className="text-xs md:text-base font-medium">✅ Licença PLR TOTAL — revenda com liberdade total</p>
+                <p className="text-xs md:text-base font-medium">✅ Plano de Ação com estratégias de venda testadas e aprovadas</p>
+                <p className="text-sm md:text-lg font-semibold mt-3 md:mt-4">💡 Comece hoje, multiplique seu propósito e viva do que você acredita!</p>
+              </div>
               <CTAButton>
                 🟣 QUERO GARANTIR MEU ACESSO AGORA!
               </CTAButton>
@@ -69,7 +70,7 @@ const Index = () => {
               <img 
                 src={heroImage} 
                 alt="Kit Crescendo com Fé - Material Cristão"
-                className="rounded-xl md:rounded-2xl shadow-soft w-full"
+                className="rounded-xl md:rounded-2xl shadow-soft w-full max-w-full"
               />
             </div>
           </div>

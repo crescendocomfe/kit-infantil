@@ -10,7 +10,7 @@ interface CTAButtonProps {
 export const CTAButton = ({ children, size = "lg", className }: CTAButtonProps) => {
   const handleClick = () => {
     // Aqui você pode adicionar o link de compra real
-    window.open("https://pay.hotmart.com/seu-link-aqui", "_blank");
+    window.open("https://pay.kiwify.com.br/TnnlaPE", "_blank");
   };
 
   return (

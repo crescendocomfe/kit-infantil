@@ -1,15 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { trackCTAClick } from "@/lib/facebook-pixel";
 
 interface CTAButtonProps {
   children: React.ReactNode;
   size?: "default" | "lg";
   className?: string;
+  location?: string;
 }
 
-export const CTAButton = ({ children, size = "lg", className }: CTAButtonProps) => {
+export const CTAButton = ({ children, size = "lg", className, location = "default" }: CTAButtonProps) => {
   const handleClick = () => {
-    // Aqui você pode adicionar o link de compra real
+    // Rastrear clique no Pixel do Facebook
+    trackCTAClick(location);
+    // Abrir link de compra
     window.open("https://pay.kiwify.com.br/TnnlaPE", "_blank");
   };
 

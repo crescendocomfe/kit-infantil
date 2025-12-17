@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ContentCard } from "@/components/ContentCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { BonusCard } from "@/components/BonusCard";
@@ -6,6 +7,7 @@ import { SalesNotification } from "@/components/SalesNotification";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Autoplay from "embla-carousel-autoplay";
+import { trackViewContent } from "@/lib/facebook-pixel";
 import { 
   BookOpen, 
   Palette, 
@@ -37,6 +39,10 @@ import activityJogoMemoria from "@/assets/activity-jogo-memoria.png";
 import activityPaiNosso from "@/assets/activity-pai-nosso.png";
 
 const Index = () => {
+  useEffect(() => {
+    trackViewContent();
+  }, []);
+
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <SalesNotification />
@@ -62,7 +68,7 @@ const Index = () => {
                 <p className="text-[11px] md:text-base font-medium break-words">✅ Plano de Ação com estratégias de venda testadas e aprovadas</p>
                 <p className="text-xs md:text-lg font-semibold mt-2 md:mt-4 break-words">💡 Comece hoje, multiplique seu propósito e viva do que você acredita!</p>
               </div>
-              <CTAButton>
+              <CTAButton location="hero">
                 🟣 QUERO GARANTIR MEU ACESSO AGORA!
               </CTAButton>
             </div>
@@ -535,7 +541,7 @@ const Index = () => {
                 <span className="font-semibold text-sm md:text-base">Licença PLR inclusa</span>
               </div>
             </div>
-            <CTAButton>
+            <CTAButton location="offer">
               🟣 QUERO GARANTIR MEU ACESSO!
             </CTAButton>
           </div>
@@ -553,7 +559,7 @@ const Index = () => {
             <br className="hidden md:block" />
             O futuro da próxima geração começa no seu lar."
           </h2>
-            <CTAButton>
+            <CTAButton location="final_cta">
               💜 BAIXAR O KIT CRESCENDO COM FÉ
             </CTAButton>
         </div>

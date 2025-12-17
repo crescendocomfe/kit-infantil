@@ -37,6 +37,7 @@ import activityLabirinto from "@/assets/activity-labirinto.png";
 import activityBrinquedos from "@/assets/activity-brinquedos.png";
 import activityJogoMemoria from "@/assets/activity-jogo-memoria.png";
 import activityPaiNosso from "@/assets/activity-pai-nosso.png";
+import bonusPaginaVendas from "@/assets/bonus-pagina-vendas.png";
 
 const Index = () => {
   useEffect(() => {
@@ -449,6 +450,54 @@ const Index = () => {
               title="Licença de Revenda (PLR)"
               description="Você tem permissão total para revender e lucrar 100%!"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Sales Page Bonus Section */}
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-accent/10 via-background to-primary/10">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="animate-fade-in">
+              <img 
+                src={bonusPaginaVendas} 
+                alt="Página de Vendas Pronta - Crescendo com Fé"
+                className="rounded-2xl shadow-2xl w-full"
+              />
+            </div>
+            <div className="text-center md:text-left space-y-6">
+              <div className="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide">
+                🎁 Super Bônus Incluso
+              </div>
+              <h2 className="text-2xl md:text-4xl font-heading font-bold text-foreground">
+                Página de Vendas Profissional Pronta!
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground">
+                Você recebe uma página de vendas completa, testada e otimizada para conversão. É só trocar pelo seu link e começar a vender!
+              </p>
+              <div className="bg-gradient-to-r from-destructive/10 to-success/10 rounded-2xl p-6 md:p-8 border-2 border-dashed border-primary/30">
+                <p className="text-muted-foreground text-sm md:text-base line-through mb-2">
+                  Valor real desta página:
+                </p>
+                <div className="flex items-center justify-center md:justify-start gap-4 flex-wrap">
+                  <span className="text-3xl md:text-5xl font-bold text-destructive line-through opacity-70">
+                    R$97
+                  </span>
+                  <span className="text-2xl md:text-3xl font-bold text-muted-foreground">
+                    por
+                  </span>
+                  <span className="text-5xl md:text-7xl font-extrabold text-success animate-pulse">
+                    R$0
+                  </span>
+                </div>
+                <p className="text-success font-bold mt-4 text-lg md:text-xl">
+                  ✅ GRÁTIS no seu acesso!
+                </p>
+              </div>
+              <p className="text-sm text-muted-foreground italic">
+                💡 Economize tempo e dinheiro com uma estrutura profissional pronta para usar!
+              </p>
+            </div>
           </div>
         </div>
       </section>
